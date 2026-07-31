@@ -1,5 +1,7 @@
 # AI Visibility Audit (Claude skill)
 
+By **[Mike Futia](https://www.skool.com/scale-ai/about)** · more Claude Code systems like this inside **[SCALE AI](https://www.skool.com/scale-ai/about)**
+
 When people ask AI for the best product in your category, does it recommend **you** — or your
 competitors? This skill runs your category's buyer questions through **Google AI Overview,
 ChatGPT, and Perplexity**, detects whether your brand is named/cited, shows **who AI recommends
@@ -43,3 +45,27 @@ ai-visibility-audit/
 - Being **named in the answer** is the goal (that's a recommendation) — stronger than just being cited in the sources.
 - Runs take a few minutes (AI engines are slow). ~$0.30–0.60 per audit.
 - Requires an Apify token (PLAYBOOK.md) + Python 3.
+
+## Example run
+
+Run against **HexClad** (24 buyer questions, US, July 2026):
+
+| | Result |
+|---|---|
+| Overall visibility | **28%** |
+| Queries containing "HexClad" | **100%** (12/12) |
+| Queries that don't name the brand | **12%** (7/59) |
+| `hexclad.com` cited as a source | 4 of 71 answers |
+| Named most instead | All-Clad, Tramontina, GreenPan |
+
+A brand that spends heavily on ads was named every time a buyer already knew it, and almost never in the
+questions that *start* a purchase — which is the gap this skill is built to find.
+
+## Who built this
+
+Made by **Mike Futia**.
+
+I build production-grade Claude Code systems for ecommerce brands, creative agencies, and performance
+marketers, and I drop new workflows like this one every week inside my community.
+
+**[Join 600+ brands and agencies in SCALE AI →](https://www.skool.com/scale-ai/about)**
